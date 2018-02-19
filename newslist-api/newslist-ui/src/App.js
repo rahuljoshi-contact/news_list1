@@ -8,7 +8,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>This is a page to show news articles </h1>
         <Articles />
       </div>
     );
@@ -24,6 +23,7 @@ class Articles extends Component {
     this.saveStory = this.saveStory.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.findElement = this.findElement.bind(this);
 
     this.state = {
       mode: 'display',
@@ -102,13 +102,21 @@ class Articles extends Component {
     }
   }
 
+  findElement = (arr, propName, propValue) => {
+    for (var i=0; i < arr.length; i++)
+      if (arr[i][propName] == propValue)
+        return arr[i];
+
+    // will return undefined if not found; you could return a default instead
+  }
+
 
   render () {
     
     if (this.state.mode === 'display') {
       return (
-        <div>
-          <h1>Articles</h1>
+        <div className="container">
+          <h1>News Articles</h1>
           <button className="button" onClick={this.handleNew}>New</button>
           {
             this.state.articles.map((article) => <Story article={article} key={article.id} handleEdit={this.handleEdit} 
@@ -121,13 +129,14 @@ class Articles extends Component {
       var newArticleId = this.state.articles.length + 1 ;
       return (
         <div>
-          <StoryForm mode={'new'} articleId={newArticleId} callbackParent={this.cancelStory} saveAction={this.saveStory}/>
+          <StoryForm mode={'new'} callbackParent={this.cancelStory} saveAction={this.saveStory}/>
         </div>
       )
     }
     else if (this.state.mode === 'edit' && this.state.editingArticleId) {
-      var article = this.state.articles[this.state.editingArticleId-1]
-      //console.log(article);
+      //var article = this.state.articles[this.state.editingArticleId-1]
+      var article = this.findElement(this.state.articles, 'id', this.state.editingArticleId);
+      console.log(article);
       return (
         <div>
           <StoryForm mode={'edit'} articleId={this.state.editingArticleId} article={article} callbackParent={this.cancelStory} saveAction={this.editStory}/>
@@ -189,30 +198,35 @@ class StoryForm extends Component {
 
   render () {
     return (
-      <div>
+      <div className="form-style-5">
         <form id="story_form" onSubmit={this.onSubmit}>
-          
+          <fieldset>
+          <legend><span className="number">1</span> Enter News Article:</legend>
+
           <label htmlFor="title">Title:</label>
-          <input type="text" name="title" value={this.state.title} onChange={this.handleInput} placeholder="Title" />
+          <input type="text" name="title" value={this.state.title} onChange={this.handleInput} placeholder="Title of your news story" />
           <br/>
 
           <label htmlFor="body">Body:</label>
-          <input type="text" name="body" value={this.state.body} onChange={this.handleInput} placeholder="Body" />
+          <textarea name="body" value={this.state.body} onChange={this.handleInput} placeholder="Body, can have html tags but no js"></textarea>
           <br/>
 
+          <legend><span className="number">2</span> Enter Additional Details (optional):</legend>
           <label htmlFor="Author">Author:</label>
-          <input type="text" name="author" value={this.state.author} onChange={this.handleInput} placeholder="Author" />
+          <input type="text" name="author" value={this.state.author} onChange={this.handleInput} placeholder="Author or source of the news" />
           <br/>
           
           <label htmlFor="title">Tags:</label>
-          <input type="text" name="tags" value={this.state.tags} onChange={this.handleInput} placeholder="tags" />
+          <input type="text" name="tags" value={this.state.tags} onChange={this.handleInput} placeholder="tags will be used for tag cloud" />
           <br/>
 
+          </fieldset>
         </form>
 
-        <button onClick={this.onSubmit} className="menuButton"> Save </button>
-        <br/>
-        <button onClick={this.cancelAction} className="menuButton">Cancel </button>
+        <button onClick={this.onSubmit} className="button"> Save </button>
+        
+        <button onClick={this.cancelAction} className="button">Cancel </button>
+
       </div>
     );
   }
@@ -238,7 +252,7 @@ class Story extends Component {
 
   render () {
     return (
-      <div>
+      <div className="container">
       <table className="mainTable">
       <tbody>
         <tr className="mainRow">
