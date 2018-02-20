@@ -1,0 +1,1000 @@
+  191  cd .git
+  192  ls
+  193  cd config
+  194  cat confg
+  195  ow
+  196  pwd
+  197  cd AlgoCasts/
+  198  cd ..
+  199  cd exercises/
+  200  ls
+  201  cd ..
+  202  ld
+  203  ls
+  204  cd ..
+  205  ls
+  206  cd AlgoCasts/
+  207  ls -a
+  208  git init
+  209  git add .
+  210  git remote add origin https://github.com/rahuljoshi-contact/algo-learning.git
+  211  git remote add origin https://github.com/rahuljoshi-contact/AlgoCasts.git
+  212  git remote -v
+  213  git add .
+  214  git commit -m "add existing file"
+  215  git push
+  216  git push origin rahuljoshi-contact/algo-learning
+  217  git push origin algo-learning
+  218  git clone --bare https://github.com/StephenGridenr/AlgoCasts 
+  219  cd ..
+  220  git clone --bare https://github.com/StephenGrider/AlgoCasts 
+  221  ls
+  222  cd AlgoCasts
+  223  ls
+  224  git push --mirror https://github.com/rahuljoshi-contact/algo-learning.git
+  225  cd ..
+  226  ls
+  227  cd ..
+  228  ls
+  229  cd git_projects/
+  230  ls
+  231  cd AlgoCasts.git
+  232  ls
+  233  rm -rf AlgoCasts.git
+  234  cd ..
+  235  rm -rf AlgoCasts
+  236  rm -rf git
+  237  rm -rf .
+  238  rm -rf AlgoCasts.git
+  239  mkdir algo-learning
+  240  cd algo-learning/
+  241  git clone https://github.com/rahuljoshi-contact/algo-learning
+  242  rm -rf algo-learning.git
+  243  rm -rf algo-learning
+  244  cd ..
+  245  rm -rf algo-learning
+  246  git clone https://github.com/rahuljoshi-contact/algo-learning
+  247  cd algo-learning/
+  248  atom .
+  249  git stage
+  250  git commit
+  251  git push
+  252  cd exercises/
+  253  cd palindrome/
+  254  jest test.js --watch
+  255  cd ..
+  256  jest palindrome/test.js --watch
+  257  cd palindrome/
+  258  node inspect index.js 
+  259  pwd
+  260  node inspect index.js 
+  261  jest palindrome/test.js --watch
+  262  jest palindrome/test.js
+  263  node inspect index.js 
+  264  jest palindrome/test.js
+  265  node inspect index.js 
+  266  jest palindrome/test.js
+  267  jest --help
+  268  jest -o
+  269  cd ..\reversei
+  270  cd..
+  271  cd ..
+  272  cd reverseint/
+  273  node imspec index.js
+  274  node inspect index.js
+  275  jest -o
+  276  jest -o --watch
+  277  jest -o
+  278  jest -o -l
+  279  jest -o -help
+  280  jest -o -listtests
+  281  jest -o -listTests
+  282  jest -o --listtests
+  283  jest --listtests
+  284  jest --listTests
+  285  jest --listTests -o
+  286  jest test.js
+  287  jest /test.js
+  288  pwd
+  289  ls
+  290  jest \reverseint\test.js
+  291  jest /reverseint/test.js
+  292  jest reverseint/test.js
+  293  git commit "RJ implementation of the code"
+  294  git commit --help
+  295  git commit
+  296  git push
+  297  exit
+  298  sudo leafpad /home/rj/.config/lxsession/Lubuntu/desktop.conf 
+  299  exit
+  300  $PS1="/u/w>"
+  301  PS1="\u:\w>"
+  302  ls
+  303  pwd
+  304  cd git_projects/algo-learning/exercises/
+  305  cd reverseint/
+  306  jest test.js 
+  307  jest /test.js 
+  308  jest \test.js 
+  309  jest reverseint/test.js
+  310  git push
+  311  cd ../maxchar/
+  312  jest /test.js
+  313  jest maxchar/test.js
+  314  jest maxchar/test.js --watch
+  315  cd ..\fiz
+  316  cd ../fizzbuzz/
+  317  jest fizzbuzz/test.js --watch
+  318  cd ../chunk/
+  319  node inspect test.js
+  320  ls
+  321  node inspect test.js
+  322  node inspect chunk/test.js
+  323  node inspect test.js
+  324  jest fizzbuzz/test.js --watch
+  325  jest chunk/test.js --watch
+  326  node inspect test.js
+  327  jest chunk/test.js --watch
+  328  node inspect test.js
+  329  jest chunk/test.js --watch
+  330  jest chunk/test.js 
+  331  jest chunk/test.js --verbose
+  332  jest -o
+  333  git push
+  334  cd git_projects/algo-learning/exercises/anagrams/
+  335  jst anagrams/test.js --watch
+  336  jest anagrams/test.js --watch
+  337  $PS1="/u:w>"
+  338  $PS1="\u:w>"
+  339  $PS1="\u:>"
+  340  PS1="\u:>"
+  341  PS1="\u:W>"
+  342  PS1="\u:w>"
+  343  PS1="\u: w>"
+  344  PS1="\u:\w>"
+  345  PS1="\u:\W>"
+  346  ls
+  347  jest anagrams/test.js --watch
+  348  node inspect test.js
+  349  cd ../maxchar/
+  350  node inspect test.js
+  351  cd ../anagrams/
+  352  node inspect test.js
+  353  jest anagrams/test.js --watch
+  354  git push
+  355  exit
+  356  uname -l
+  357  uname -a
+  358  uname -h
+  359  uname --h
+  360  uname --help
+  361  uname -r -o
+  362  uname -r -m
+  363  uname -r -p
+  364  uname -r -v
+  365  uname -r -vn
+  366  PS1="\u:\W>"
+  367  cd git_projects/
+  368  cd algo-learning/
+  369  PS1="\u@\W]"
+  370  PS1="\u@\W->"
+  371  PS1="\W->"
+  372  d..
+  373  cd ..
+  374  ls
+  375  cd home/rj/git_projects/
+  376  ls
+  377  ls -a
+  378  ls -b
+  379  ls -c
+  380  ls -o
+  381  ls -p
+  382  ls -v
+  383  ls -r
+  384  ls -d
+  385  ls -c
+  386  ls -f
+  387  ls -a
+  388  ls -r
+  389  ls
+  390  cd algo-learning/
+  391  cd exercises/
+  392  ls
+  393  cd linkedlist/
+  394  atom .
+  395  cd git_projects/algo-learning/exercises/
+  396  git push
+  397  atom .
+  398  cd palindrome/
+  399  ls
+  400  ps1="\u@\W>>"
+  401  PS1="\u@\W>>"
+  402  clear
+  403  ls
+  404  cd ..
+  405  cd palindrome/
+  406  cat index.js 
+  407  node --help
+  408  node -e index.js 
+  409  node -s index.js 
+  410  node -v index.js 
+  411  node -e index.js 
+  412  node  index.js 
+  413  cd ../linkedlist/
+  414  node  index.js 
+  415  cd ../linkedlist/
+  416  node  index.js 
+  417  cd ../..
+  418  atom .
+  419  cd exercises/linkedlist/
+  420  jest linkedlist/test.js --watch
+  421  atom .
+  422  node -v
+  423  node
+  424  atom .
+  425  cd ../
+  426  cd ../..
+  427  cd ..
+  428  mkdir node_projects
+  429  cd node_projects/
+  430  mkdir early
+  431  cd early/
+  432  atom helloworld.js
+  433  node helloworld.js 
+  434  pwd
+  435  cd ..
+  436  mkdir notes-node
+  437  cd notes-node/
+  438  atom .
+  439  node app.js 
+  440  exit
+  441  cd node_projects/notes-node/
+  442  atom .
+  443  node app.js 
+  444  touch notes.js
+  445  node app.js 
+  446  touch notes.js
+  447  node app.js 
+  448  npm --help
+  449  npm -v
+  450  npm init
+  451  ls
+  452  cat package.json 
+  453  cd ..
+  454  cd git_projects/algo-learning/exercises/
+  455  mkdir python_code
+  456  cd py
+  457  cd python_code/
+  458  git stage
+  459  git add .
+  460  git stage
+  461  git commit -m 'python code'
+  462  git push
+  463  cd ../..
+  464  cd ../../node_projects/
+  465  cd notes-node/
+  466  exit
+  467  cd node_projects
+  468  cd ls
+  469  ls
+  470  cd ../git_projects/
+  471  cd algo-learning/exercises/
+  472  cd linkedlist/
+  473  ps1="\u:\W>"
+  474  PS1="\u:\W>"
+  475  clear
+  476  cd ..
+  477  jest linkedlist/test.js
+  478  jest linkedlist/test.js --watch
+  479  PS1="\u:\W>"
+  480  cd git_projects/algo-learning/exercises/
+  481  jest --help
+  482  jest linkedlist/test.js --watch
+  483  PS1="\u:\W>"
+  484  PS1="\u@\W>"
+  485  cd git_projects/algo-learning/exercises/
+  486  jest linkedlist/test.js
+  487  atom .
+  488  jest linkedlist/test.js
+  489  git staus
+  490  git status
+  491  git push
+  492  git status
+  493  cd ../../../node_projects
+  494  cd notes-node/
+  495  git status
+  496  ls
+  497  git add *.js
+  498  git status
+  499  git commit -m 'added yargs, arg from user'
+  500  git status
+  501  git push
+  502  git push --set-upstream origin master
+  503  git status
+  504  cd ../..
+  505  cd git_projects/algo-learning/exercises/
+  506  jest anagrams//test.js 
+  507  jest anagrams/test.js 
+  508  npm install nodemon -g
+  509  cd node_projects
+  510  ls
+  511  cd  notes-node/
+  512  ls
+  513  cd ..
+  514  npm install nodemon -g
+  515  sudo npm install nodemon -g
+  516  nodemon app.js
+  517  atom .
+  518  ls
+  519  cd notes-node/
+  520  ls
+  521  nodemon app.js
+  522  node app.js list
+  523  nodemon app.js
+  524  clear
+  525  PS1="\u:\W>"
+  526  nodemon app.js Rahul
+  527  PS1="\u:\W>"
+  528  node app.js add
+  529  nodemon app.js add
+  530  nodemon app.js list
+  531  node app.js litss
+  532  node app.js lits
+  533  node app.js list
+  534  node app.js read
+  535  node app.js remove
+  536  node app.js add
+  537  ls
+  538  cd ..
+  539  ls
+  540  npm install yargs
+  541  git stage
+  542  cd notes-node/
+  543  git add .
+  544  git stage
+  545  git status
+  546  git commit -m 'added command line args in app.js'
+  547  git push
+  548  git push origin master
+  549  yargs -v
+  550  npm list
+  551  npm --help
+  552  npm help
+  553  pwd
+  554  node app.js add
+  555  node app.js add list
+  556  node app.js add --title=Note1 boy="contents for note 1"
+  557  node app.js add --title=Note1 body="contents for note 1"
+  558  node app.js add --title=Note1 --body="contents for note 1"
+  559  PS1="\u@\W>"
+  560  cd git_projects/algo-learning/exercises/
+  561  git status
+  562  jest anagrams/test.js 
+  563  node
+  564  jest anagrams/test.js --watch
+  565  atom .
+  566  jest capitalize/test.js --watch
+  567  node
+  568  jest capitalize/test.js --watch
+  569  node
+  570  jest capitalize/test.js --watch
+  571  exit
+  572  ssh ec2-user@54.145.47.247
+  573  ls
+  574  cd Downloads/AWS\ Files/
+  575  ls
+  576  ssh ec2-user@54.145.47.247 -i RJEC2_Instance1_Keys.pem 
+  577  exit
+  578  cd Downloads/
+  579  ls
+  580  cd ../git_projects/algo-learning/exercises/
+  581  atom .
+  582  jest steps/test.js 
+  583  node
+  584  shutdown -r
+  585  shutdown -c
+  586  shutdown
+  587  shutdown --help
+  588  shutdown -r --reboot
+  589  cd git_projects/algo-learning/exercises/
+  590  PS1=\u$
+  591  PS1=\w$
+  592  PS1="\w$"
+  593  PS1="\u:\w$"
+  594  PS1="\u:\W$"
+  595  PS1="\u@\W>"
+  596  node
+  597  git status
+  598  git commit -m "implementation"
+  599  git commit . -m "implementation"
+  600  git push
+  601  git status
+  602  atom .
+  603  jest pyramid/test.js 
+  604  node pyramid/index.js 
+  605  node steps/index.js 
+  606  node pyramid/index.js 
+  607  jest pyramid/test.js 
+  608  cd Downloads/AWS\ Files/
+  609  sudo ec2-user@54.163.190.49 -i RJEC2_Instance1_Keys.pem 
+  610  ssh ec2-user@54.163.190.49 -i RJEC2_Instance1_Keys.pem 
+  611  exit
+  612  cd Downloads/AWS\ Files/
+  613  ssh ec2-user@54.235.238.44
+  614  ls
+  615  ssh ec2-user@54.235.238.44 -i RJEC2_Instance1_Keys.pem 
+  616  exit
+  617  PS1="\u@\W>"
+  618  clear
+  619  help
+  620  eval 2+3
+  621  eval [2+3]
+  622  exec cd
+  623  clear
+  624  cd git_projects/algo-learning/
+  625  git status
+  626  git add exercises//steps/index.js 
+  627  git status
+  628  git commit -m "steps.js modified from linux vm"
+  629  git push
+  630  git pull
+  631  git add .
+  632  git pull
+  633  git pull -help
+  634  git pull -f
+  635  git statsh
+  636  git stash
+  637  git pull -f
+  638  git status
+  639  atom .
+  640  git add .
+  641  git commit -m "all changes being committe from linux vm after rebase"
+  642  git status
+  643  git push
+  644  git sync
+  645  git rebase
+  646  git status
+  647  cd patterns/constructor/
+  648  node constructor.js 
+  649  cd ../singleton/
+  650  node singleton.js 
+  651  git status
+  652  cd ..
+  653  cd..
+  654  cd ..
+  655  git status
+  656  git add .
+  657  git commit -m "patterns added"
+  658  git push
+  659  cd patterns/singleton/
+  660  ls
+  661  node singleton.js 
+  662  git status
+  663  git add .
+  664  git commit -m "two impl of singleton from linux vm"
+  665  git push
+  666  exit
+  667  gem install rails -v 5.1.4
+  668  sudo apt install ruby
+  669  curl
+  670  gem -v
+  671  rvm
+  672  \curl -L https://get.rvm.io | bash -s stable --ruby
+  673  rvm install ruby
+  674  gem update --system
+  675  sudo gem update --system
+  676  gem install bundler
+  677  sudo gem install bundler
+  678  gem install rails
+  679  sudo gem install rails
+  680  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  681  \curl -sSL https://get.rvm.io | bash -s stable
+  682  rvm install 2.3.1
+  683  exit
+  684  cd ruby_projects/
+  685  npm install axios --save
+  686  ls
+  687  cd ../node_projects
+  688  ls
+  689  npm install axios --save
+  690  cd ../ruby_projects/
+  691  cd idea/ideaboard-api/ide
+  692  cd idea/ideaboard-api/ideaboard/
+  693  bundle install
+  694  cd ..
+  695  bundle install
+  696  ls
+  697  bundle install
+  698  pwd
+  699  cd ..
+  700  bundle install
+  701  rails -v
+  702  ruby -v
+  703  rails -v
+  704  cd ideaboard-api/
+  705  rails -v
+  706  cd rub
+  707  cd ruby_projects/idea/ide
+  708  cat .bashrc
+  709  sudo kate .bashrc
+  710  sudo leafpad .bashrc
+  711  sudo nano .bashrc
+  712  exit
+  713  cd ruby_projects/
+  714  cd idea/ideaboard-api/
+  715  rails -v
+  716  login shell
+  717  shell login
+  718  sudo login shell
+  719  exit
+  720  cd ruby_projects/idea/ideaboard-api/ide
+  721  npm start
+  722  cd ruby_projects/idea/ideaboard-api/ideaboard/
+  723  npm start
+  724  exit
+  725  cd node_projects
+  726  ls
+  727  npm install immutability-helper --save
+  728  cd ../ruby_projects/idea/ideaboard-api/
+  729  PS1="\u@\W>"
+  730  atom .
+  731  npm install immutability-helper --save
+  732  ls
+  733  cd ideaboard/
+  734  ls
+  735  npm install immutability-helper --save
+  736  cd node_modules/
+  737  ls
+  738  cd webpack
+  739  ls
+  740  cd ..
+  741  cd file-loader/
+  742  ls
+  743  cd ..
+  744  ls
+  745  cd ..
+  746  npm install
+  747  yarn -help
+  748  yarn --help
+  749  cd ..
+  750  git init
+  751  ls
+  752  touch .gitignore
+  753  leafpad .gitignore 
+  754  node status
+  755  git status
+  756  git -help
+  757  git add
+  758  git add .
+  759  git status
+  760  git commit -m 'ideaboard-api added to git'
+  761  git info
+  762  git status
+  763  git --help
+  764  cd ideaboard-api/ideaboard/
+  765  git status
+  766  git add .
+  767  git status
+  768  git add ../db
+  769  git status
+  770  git add ../config
+  771  git add ../app
+  772  git add ../Gemfile
+  773  cd ..
+  774  git status
+  775  cd ide
+  776  cd ideaboard/
+  777  git status
+  778  cd ..
+  779  git status
+  780  git commit -m 'api and client added'
+  781  cd ..
+  782  git status
+  783  git remote add origin https://github.com/rahuljoshi-contact/ideaboard
+  784  git push
+  785  git push -u origin master
+  786  git pull
+  787  git push --setupstream origin master
+  788  git push --set-upstream origin master
+  789  git pull
+  790  git merge
+  791  git fetch
+  792  git status
+  793  git merge
+  794  git push --set-upstream origin master
+  795  git push --help
+  796  git push -f --set-upstream origin master
+  797  git status
+  798  git add .
+  799  cd ideaboard-api/ideaboard/
+  800  git status
+  801  git add src/components/IdeaForm.js 
+  802  git commit -m 'changes and new files'
+  803  git push 
+  804  git push origin master
+  805  cd ..
+  806  git push
+  807  git status
+  808  git commit -m 'new changes and file'
+  809  git push
+  810  git status
+  811  git add .
+  812  cd ideaboard-api/
+  813  git status
+  814  git add .
+  815  git status
+  816  git reset
+  817  git status
+  818  cd ..
+  819  git status
+  820  git commit -m 'api & client files modified' 
+  821  cd ..
+  822  git status
+  823  cd idea/ideaboard-api/
+  824  git status
+  825  git commit --help
+  826  git add app/controllers/api/v1/ideas_controller.rb 
+  827  git add ideaboard/src/App.css 
+  828  git status
+  829  git add ideaboard/src/components/IdeaForm.js 
+  830  git add ideaboard/src/components/IdeasContainer.js 
+  831  git status
+  832  cd ..
+  833  git status
+  834  cd ideaboard-api/
+  835  git status
+  836  git commit -m 'client files changed' 
+  837  git push
+  838  git push origin master
+  839  cd ..
+  840  git push
+  841  exit
+  842  rails -v
+  843  rvm
+  844  cd ruby_projects/idea/
+  845  cd ideaboard-api/
+  846  rails -s p 3001
+  847  rails s -p 3001
+  848  exit
+  849  cd ruby_projects/news_list1/newslist-api/
+  850  bundle install
+  851  git status
+  852  git add app
+  853  git status
+  854  git add db
+  855  git add config
+  856  git add Gemfile
+  857  git status
+  858  cd newslist-ui/
+  859  git status
+  860  ls
+  861  ls -a
+  862  git add src/
+  863  git status
+  864  cd ..
+  865  git status
+  866  git commit -m 'all core files checked in'
+  867  git push -u origin master
+  868  cd ..
+  869  git status
+  870  git push -u origin master
+  871  git add newslist-api/
+  872  git status
+  873  git commit -m 'core code files'
+  874  git push -u origin master
+  875  git status
+  876  git add .
+  877  git status
+  878  git push
+  879  git commit -m 'fine tuning of styles' 
+  880  git push -u origin master
+  881  cd newslist-api/
+  882  bundle install --without production
+  883  git status
+  884  git add Gemfile
+  885  git status
+  886  bundle install --without production
+  887  git status
+  888  git commit -a -m 'updated gemfile and app'
+  889  heroku --version
+  890  git config --global user.name "Rahul Joshi"
+  891  git config --global user.email "RahulJoshi.contact@gmail.com"
+  892  heroku
+  893  sudo apt-get install heroku
+  894  cd ..
+  895  wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  896  heroku --version
+  897  git status
+  898  git add .
+  899  git status
+  900  git commit -m 'gemfile updates'
+  901  git push -u origin master
+  902  heroku login
+  903  heroku keys:add
+  904  git log
+  905  git status
+  906  heroku create
+  907  cd newslist-api/
+  908  heroku create
+  909  git push heroku master
+  910  git add Gemfile.lock 
+  911  git commit -m 'gemfile.lock added'
+  912  git push -u origin master
+  913  cd ..
+  914  git push -u origin master
+  915  cd newslist-api/
+  916  git push heroku master
+  917  ls G
+  918  ls G*
+  919  bundle install --without production
+  920  git push heroku
+  921  cd ..
+  922  git push heroku
+  923  cd newslist-api/
+  924  git push heroku master
+  925  git status
+  926  git add .
+  927  git add Gemfile.lock 
+  928  bundle install --without production
+  929  git status
+  930  git add --help
+  931  git reset
+  932  git add Gemfile 
+  933  git add Gemfile.lock 
+  934  git status
+  935  git commit -m 'gemfile updates'
+  936  PS1='\u@\W>'
+  937  git push heroku master
+  938  heroku run rails db:migrate
+  939  heroku create
+  940  git push heroku master
+  941  heroku run rails db:migrate
+  942  ls
+  943  heroku rails db:create
+  944  heroku run rails db:create
+  945  heroku run rails db:seed
+  946  cd ..
+  947  heroku run rails db:migrate
+  948  cd news
+  949  cd newslist-api/
+  950  heroku run rails db:migrate
+  951  heroku rakedb:migrate
+  952  heroku run rake db:migrate
+  953  heroku run rails db:migrate
+  954  heroku run rake db:create
+  955  cat config/database.yml 
+  956  git push heroku master
+  957  bundle install
+  958  git status
+  959  git add .
+  960  git status
+  961  git reset
+  962  git status
+  963  cd ..
+  964  git status
+  965  git add .
+  966  git status
+  967  git commit -m 'gemfile changes and database.yml'
+  968  git push -u origin master
+  969  cd ..
+  970  git status
+  971  cd news_list1/newslist-api/
+  972  git status
+  973  git add Gemfile, Gemfile.lock 
+  974  git add Gemfile; Gemfile.lock 
+  975  git add {Gemfile; Gemfile.lock} 
+  976  git add Gemfile.lock 
+  977  git add Gemfile
+  978  git add config/database.yml 
+  979  git add newslist-ui/src/App.js 
+  980  git status
+  981  git commit -m 'gemgile'
+  982  git push heroku master
+  983  heroku run rails db:migrate
+  984  heroku run rake db:migrate
+  985  heroku run rails db:seed
+  986  heroku apps:info
+  987  cd ..
+  988  heroku create
+  989  cd newslist-api/
+  990  heroku create
+  991  git push heroku master
+  992  cd ..
+  993  git push heroku master
+  994  cd ..
+  995  git push heroku master
+  996  cd ..
+  997  cd ruby_projects/news_list1/
+  998  heroku create
+  999  git push heroku master
+ 1000  git status
+ 1001  git push heroku origin/master
+ 1002  heroku create
+ 1003  git push heroku origin/master
+ 1004  git commit -m ''
+ 1005  git status
+ 1006  cd ..
+ 1007  git status
+ 1008  cd news_list1/
+ 1009  cd newslist-api/
+ 1010  git status
+ 1011  cd newslist-ui/
+ 1012  ls
+ 1013  git status
+ 1014  heroku --version
+ 1015  sudo apt-get update
+ 1016  cd .. && source <(curl -sL https://cdn.learnenough.com/heroku_install)
+ 1017  cd ..
+ 1018  source <(curl -sL https://cdn.learnenough.com/heroku_install)
+ 1019  sudo source <(curl -sL https://cdn.learnenough.com/heroku_install)
+ 1020  source <(curl -sL https://cdn.learnenough.com/heroku_install)
+ 1021  heroku --version
+ 1022  heroku login
+ 1023  heroku keys:add
+ 1024  heroku create
+ 1025  git push heroku master
+ 1026  git remote rm heroku
+ 1027  git remote rm heroku
+ 1028  heroku create
+ 1029  git push heroku master
+ 1030  cd ..
+ 1031  cd news_list1/newslist-api/
+ 1032  git push heroku master
+ 1033  bundle install
+ 1034  ls
+ 1035  bundle install
+ 1036  cd ..
+ 1037  bundle install
+ 1038  exit
+ 1039  cd ruby_projects/
+ 1040  cd news_list1/
+ 1041  cd newslist-api/
+ 1042  bundle install
+ 1043  PS1=\u@\W>'
+ 1044  PS1='\u@\W>'
+ 1045  git status
+ 1046  git pust heroku master
+ 1047  git push heroku master
+ 1048  git rm remote heroku
+ 1049  git remote rm heroku
+ 1050  git push heroku master
+ 1051  cd ..
+ 1052  git push heroku master
+ 1053  bundle install --without production
+ 1054  cd newslist-api/
+ 1055  bundle install --without production
+ 1056  git commit -a -m ''
+ 1057  cd ..
+ 1058  git commit -a -m ''
+ 1059  heroku
+ 1060  heroku create
+ 1061  git push heroku master
+ 1062  cd news
+ 1063  git push heroku
+ 1064  cd newslist-api/
+ 1065  git push heroku
+ 1066  git push heroku master
+ 1067  git remote rm heroku
+ 1068  cd ..
+ 1069  git remote rm heroku
+ 1070  git status
+ 1071  cd newslist-api/
+ 1072  git init
+ 1073  heroku create news_clist1
+ 1074  heroku create news-list1
+ 1075  git push heroku master
+ 1076  heroku run rails db:migrate
+ 1077  heroku run - rails db:migrate
+ 1078  git status
+ 1079  git add newslist-ui/src/App.css 
+ 1080  git add newslist-ui/src/App.js
+ 1081  git status
+ 1082  git add newslist-ui/README.md 
+ 1083  git commit -m 'fine tuning'
+ 1084  cd ..
+ 1085  git status
+ 1086  git add .
+ 1087  git status
+ 1088  git commit -m 'fine tuning'
+ 1089  git push -u origin master
+ 1090  cd newslist-api/newslist-ui/
+ 1091  git status
+ 1092  cd ..
+ 1093  ls
+ 1094  cd newslist-api/
+ 1095  bundle install
+ 1096  bundle install --without production
+ 1097  git push heroku master
+ 1098  heroku run rails db:migrate
+ 1099  heroku run rake db:migrate
+ 1100  heroku run rails db:migrate
+ 1101  heroku run rake db:version
+ 1102  heroku apps
+ 1103  heroku run rails db:migrate --app news-list1
+ 1104  heroku run rake db:migrate --app news-list1
+ 1105  rails -v
+ 1106  bundle install --without production
+ 1107  git status
+ 1108  git add .
+ 1109  git status
+ 1110  git commit -a 'gem update'
+ 1111  git commit -m 'gem update'
+ 1112  git push heroku master
+ 1113  heroku run rake db:migrate --app news-list1
+ 1114  heroku run rake db:seed --app news-list1
+ 1115  cd new
+ 1116  cd newslist-ui/
+ 1117  git status
+ 1118  git add src/App.js 
+ 1119  git commit -m 'url change pointing to heroku app' 
+ 1120  git push origin master
+ 1121  yarn --help
+ 1122  yarn list
+ 1123  yarn list axios
+ 1124  yarn list >> dependency_list.txt
+ 1125  yarn --help
+ 1126  yarn --versions
+ 1127  git add .
+ 1128  git commit -m 'more changes'
+ 1129  git push heroku master
+ 1130  cd ..
+ 1131  heroku restart
+ 1132  cd ..
+ 1133  touch index.html
+ 1134  git status
+ 1135  git add index.html 
+ 1136  git commit -m
+ 1137  git commit -m 'index.html'
+ 1138  git status
+ 1139  git add .
+ 1140  git status
+ 1141  git commit -m 'more changes'
+ 1142  git push -u origin master
+ 1143  yarn add immutability-helper
+ 1144  cd newslist-api/newslist-ui/
+ 1145  npm run build
+ 1146  yarn add --dev gh-pages
+ 1147  yarn run deploy
+ 1148  ls
+ 1149  cd ..
+ 1150  yarn run deploy
+ 1151  cd newslist-api/newslist-ui/
+ 1152  git remote remove origin
+ 1153  git remote add origin https://github.com/rahuljoshi-contact/news_list1
+ 1154  git push -u origin master
+ 1155  yarn run deploy
+ 1156  git init
+ 1157  heroku create newslist-ui1
+ 1158  git add .
+ 1159  heroku create newslist-ui1 --buildpack https://github.com/mars/create-react-app-buildpack.git
+ 1160* heroku create newslist-ui2 --buildpack https://github.com/mars/create-react-app-buildpac
+ 1161  git add .
+ 1162  git commit -m 'newslist app 2'
+ 1163  git push heroku master
+ 1164  heroku open
+ 1165  git log
+ 1166  git status
+ 1167  git add .
+ 1168  git status
+ 1169  git commit -m 'newslist app 2'
+ 1170  git push heroku master
+ 1171  cd ..
+ 1172  git status
+ 1173  git add .
+ 1174  git status
+ 1175  git commit -m 'minor changes to cors'
+ 1176  git push heroku master
+ 1177  cd ..
+ 1178  cd newslist-api/newslist-ui/
+ 1179  heroku restart
+ 1180  cd ..
+ 1181  heroku restart
+ 1182  curl https://news-list1.herokuapp.com/articles
+ 1183  curl -I https://news-list1.herokuapp.com/articles
+ 1184  cat config/application.rb 
+ 1185  git add .
+ 1186  git status
+ 1187  git commit -m 'cors update'
+ 1188  git push heroku master
+ 1189  history
+ 1190  history >command_history.txt

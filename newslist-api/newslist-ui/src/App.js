@@ -61,15 +61,16 @@ class Articles extends Component {
     axios.post(`https://news-list1.herokuapp.com/articles`,  {article: article} )
     .then(response => {
       const articles = update(this.state.articles, { $splice: [[0, 0, response.data]]})
-      this.setState({articles: articles, mode: 'display'})
+      this.setState({articles: articles, mode: 'display', editingArticleId:''})
     })
     .catch(error => console.log(error))
 
   }
 
   editStory = (data, id) => {
-    console.log('Article.editStory, id: ' + id);
+    //console.log('Article.editStory, id: ' + id);
     const article = {
+      id: data.id, 
       title: data.title, 
       body: data.body,
       tags: data.tags,
@@ -77,8 +78,11 @@ class Articles extends Component {
     }
     axios.put(`https://news-list1.herokuapp.com/articles/${data.id}`,  {article: article} )
     .then(response => {
-      const articles = update(this.state.articles, { $splice: [[0, 0, response.data]]})
-      this.setState({articles: articles, mode: 'display'})
+      const articleIndex = this.state.articles.findIndex(x => x.id === id)
+      article.created_at = this.state.articles[articleIndex].created_at;
+      article.updated_at = this.state.articles[articleIndex].updated_at;
+      const articles = update(this.state.articles, {[articleIndex]: { $set: article }})
+      this.setState({articles: articles, mode: 'display', editingArticleId: ''})
     })
     .catch(error => console.log(error))
 
@@ -87,6 +91,7 @@ class Articles extends Component {
 
   handleEdit (id, mode) {
     this.setState({mode: 'edit', editingArticleId: id}) ;
+    console.log('Articles.handleEdit, editingArticleId ' + id + 'mode: ' + mode);
   }
 
   handleDelete (id, mode) {
@@ -114,12 +119,13 @@ class Articles extends Component {
   render () {
     
     if (this.state.mode === 'display') {
+      console.log(JSON.stringify(this.state));
       return (
         <div className="container">
           <h1>News Articles</h1>
           <button className="button" onClick={this.handleNew}>New</button>
           {
-            this.state.articles.map((article) => <Story article={article} key={article.id} handleEdit={this.handleEdit} 
+            this.state.articles.map((article, i) => <Story article={article} key={i} handleEdit={this.handleEdit} 
               callbackParent={this.handleDelete} />)
           }
         </div>
@@ -289,6 +295,7 @@ class Story extends Component {
     super(props); 
     this.handleDelete = this.handleDelete.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
+    console.log('Story.constructor props: ' + JSON.stringify(this.props));
   }
 
   handleDelete = () => { 
@@ -297,6 +304,7 @@ class Story extends Component {
   }
 
   handleEdit () {
+    console.log('Story,handleEdit article id: ' + this.props.article.id);
     this.props.handleEdit(this.props.article.id, 'edit') ;
   }
 

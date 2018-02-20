@@ -31,6 +31,6 @@ class ArticlesController < ApplicationController
     end
 
 	def idea_params
-      params.require(:article).permit(:title, :body, :tags, :author)
+      params.require(:article).permit(:title, :body, :tags, :author, :id, :created_at, :updated_at, :kids, :parent)
     end
 end
