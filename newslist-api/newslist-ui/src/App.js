@@ -34,7 +34,7 @@ class Articles extends Component {
   }
   
   componentDidMount() {
-      axios.get('http://localhost:3001/articles/')
+      axios.get('https://news-list1.herokuapp.com/articles')
     .then(response => {
       console.log(response)
       this.setState({articles: response.data})
@@ -58,7 +58,7 @@ class Articles extends Component {
       tags: data.tags,
       author: data.author
     }
-    axios.post(`http://localhost:3001/articles/`,  {article: article} )
+    axios.post(`https://news-list1.herokuapp.com/articles`,  {article: article} )
     .then(response => {
       const articles = update(this.state.articles, { $splice: [[0, 0, response.data]]})
       this.setState({articles: articles, mode: 'display'})
@@ -75,7 +75,7 @@ class Articles extends Component {
       tags: data.tags,
       author: data.author
     }
-    axios.put(`http://localhost:3001/articles/${data.id}`,  {article: article} )
+    axios.put(`https://news-list1.herokuapp.com/articles/${data.id}`,  {article: article} )
     .then(response => {
       const articles = update(this.state.articles, { $splice: [[0, 0, response.data]]})
       this.setState({articles: articles, mode: 'display'})
@@ -91,7 +91,7 @@ class Articles extends Component {
 
   handleDelete (id, mode) {
     if (mode === 'delete') {
-      axios.delete(`http://localhost:3001/articles/${id}`)
+      axios.delete(`https://news-list1.herokuapp.com/articles/${id}`)
         .then(response => {
       const ideaIndex = this.state.articles.findIndex(x => x.id === id)
       const ideas = update(this.state.articles, { $splice: [[ideaIndex, 1]]})
