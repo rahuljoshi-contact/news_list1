@@ -146,6 +146,14 @@ class Articles extends Component {
   
 } //Articles class ends
 
+function validate(title, body) {
+  // true means invalid, so our conditions got reversed
+  return {
+    title: title.length === 0,
+    body: body.length === 0,
+  };
+}
+
 class StoryForm extends Component {
   
   constructor(props) {
@@ -160,7 +168,11 @@ class StoryForm extends Component {
         author: this.props.article.author,
         tags: this.props.article.tags,
         id: this.props.articleId, 
-        mode: 'edit'
+        mode: 'edit',
+        touched: {
+          email: false,
+          password: false,
+        }
       }
     }
     else {
@@ -168,14 +180,23 @@ class StoryForm extends Component {
         title: '',
         body: '',
         author: '',
-        tags: '' 
+        tags: '', 
+        touched: {
+          email: false,
+          password: false,
+        },
       }
     }
     
   }
 
   onSubmit = (e) => {
-    e.preventDefault();
+    if (!this.canBeSubmitted()) {
+      e.preventDefault();
+      return;
+    }
+ 
+    //e.preventDefault();
     if (this.state.mode === 'edit') {
       console.log(this.state);
       this.props.saveAction(this.state, this.state.id);
@@ -186,6 +207,13 @@ class StoryForm extends Component {
  
   }
   
+  handleBlur = (field) => (evt) => {
+    this.setState({
+      touched: { ...this.state.touched, [field]: true },
+    });
+  }
+
+
   handleInput = (e) => {
     //this.props.resetNotification()
     this.setState({[e.target.name]: e.target.value})
@@ -195,19 +223,42 @@ class StoryForm extends Component {
     this.props.callbackParent();
   }
 
+  canBeSubmitted() {
+    const errors = validate(this.state.title, this.state.body);
+    const isDisabled = Object.keys(errors).some(x => errors[x]);
+    return !isDisabled;
+  }
+
+
   render () {
+    const errors = validate(this.state.title, this.state.body);
+    const isDisabled = Object.keys(errors).some(x => errors[x]);
+
+    const shouldMarkError = (field) => {
+      const hasError = errors[field];
+      const shouldShow = this.state.touched[field];
+      return hasError ? shouldShow : false;
+    };
+
     return (
       <div className="form-style-5">
         <form id="story_form" onSubmit={this.onSubmit}>
           <fieldset>
           <legend><span className="number">1</span> Enter News Article:</legend>
 
-          <label htmlFor="title">Title:</label>
-          <input type="text" name="title" value={this.state.title} onChange={this.handleInput} placeholder="Title of your news story" />
+          <label htmlFor="title"><span className="required">*</span> Title:</label>
+          <input type="text" name="title" value={this.state.title} 
+          className={shouldMarkError('title') ? "error" : ""}
+          onChange={this.handleInput} 
+          onBlur={this.handleBlur('title')}
+          placeholder="Title of your news story" />
           <br/>
 
-          <label htmlFor="body">Body:</label>
-          <textarea name="body" value={this.state.body} onChange={this.handleInput} placeholder="Body, can have html tags but no js"></textarea>
+          <label htmlFor="body"><span className="required">*</span> Body:</label>
+          <textarea name="body" value={this.state.body} 
+          onChange={this.handleInput} 
+          onBlur={this.handleBlur('body')}
+          placeholder="Body, can have html tags but no js"></textarea>
           <br/>
 
           <legend><span className="number">2</span> Enter Additional Details (optional):</legend>
@@ -222,7 +273,7 @@ class StoryForm extends Component {
           </fieldset>
         </form>
 
-        <button onClick={this.onSubmit} className="button"> Save </button>
+        <button disabled={isDisabled} onClick={this.onSubmit} className="button"> Save </button>
         
         <button onClick={this.cancelAction} className="button">Cancel </button>
 

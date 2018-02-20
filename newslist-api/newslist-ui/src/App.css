@@ -75,7 +75,7 @@
 .title {
   font-size: 22px; 
   font-weight: bold;
-  color: #04d ;
+  color: #1a6c5c ;
   height: 20px ;
   text-align: left ;
   border-bottom: 1px solid #bbb ;
@@ -108,13 +108,19 @@
 .form-style-5 legend {
     font-size: 1.2em;
     margin-bottom: 10px;
-    text-align: center; 
+    text-align: left; 
 }
 .form-style-5 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     text-align: left; 
+    color: #777 ;
 }
+
+.required {
+  color: #1abc9c ;
+}
+
 .form-style-5 input[type="text"],
 .form-style-5 input[type="date"],
 .form-style-5 input[type="datetime"],
@@ -127,7 +133,7 @@
 .form-style-5 select {
     font-family: Georgia, "Times New Roman", Times, serif;
     background: rgba(255,255,255,.1);
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 13px;
     margin: 0;
@@ -138,7 +144,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box; 
     background-color: #fff;
-    color:#8a97a0;
+    color:#000;
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 14px;
@@ -161,6 +167,7 @@
 .form-style-5 textarea:focus,
 .form-style-5 select:focus{
     background: #fff;
+    color: #000 ;
 }
 .form-style-5 select{
     -webkit-appearance: menulist-button;
@@ -195,9 +202,15 @@
   border-radius: 45px 15px 15px 0px;
 }
 
+.form-style-5 .button:disabled {
+  color: #fff;
+  background-color: #aaa;
+}
+
 .form-style-5 .button:focus {
   color: #000;
 }
+
 .form-style-5 input[type="submit"],
 .form-style-5 input[type="button"]
 {
@@ -219,4 +232,20 @@
 .form-style-5 input[type="button"]:hover
 {
     background: #109177;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bbb;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #6accbc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #6accbc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #6accbc;
+}
+.error  {
+  border: 1px solid #e00 ;
 }
