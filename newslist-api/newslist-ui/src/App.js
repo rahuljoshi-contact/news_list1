@@ -104,7 +104,7 @@ class Articles extends Component {
 
   findElement = (arr, propName, propValue) => {
     for (var i=0; i < arr.length; i++)
-      if (arr[i][propName] == propValue)
+      if (arr[i][propName] === propValue)
         return arr[i];
 
     // will return undefined if not found; you could return a default instead
@@ -126,7 +126,6 @@ class Articles extends Component {
       );
     }
     else if (this.state.mode === 'new') {
-      var newArticleId = this.state.articles.length + 1 ;
       return (
         <div>
           <StoryForm mode={'new'} callbackParent={this.cancelStory} saveAction={this.saveStory}/>
