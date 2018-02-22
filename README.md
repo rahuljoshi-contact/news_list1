@@ -4,12 +4,14 @@ Back-end
 - ruby on rails data API
 - data model using hybrid of hackernews and provided items.csv file.
 - used pretty much out of the box API generation that rails offer
+- can be accessed here: https://news-list1.herokuapp.com/articles
 
 Front-end
 - create-react-app, (no redux)
 - using axios for api interaction,
 - immutability helper for state splicing
 - used basic form validations for few mandatory fields.
+- can be accessed here: https://newslist-ui1.herokuapp.com/
 
 Testing
 - all basic flows are working.
